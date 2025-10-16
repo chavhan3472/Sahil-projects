@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chessboard</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #222;
+    }
+
+    .chessboard {
+      display: grid;
+      grid-template-columns: repeat(8, 80px); 
+      border: 5px solid white;
+      transform: rotateX(360deg) rotateZ(70deg);
+      transform-style: preserve-3d;
+    }
+
+    .square {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      color: rgb(185, 57, 185);
+    }
+
+    
+    .square:nth-child(even) {
+      background: #000;   /* black */
+      border: 1px solid  rgb(63, 43, 43);
+    }
+    .square:nth-child(odd) {
+      background: #fff;   /* white */
+      border:1px solid rgb(90, 97, 75);
+    }
+  </style>
+</head>
+<body>
+  <div class="chessboard">
+
+    <div class="square">♜</div>
+    <div class="square">♞</div>
+    <div class="square">♝</div>
+    <div class="square">♛</div>
+    <div class="square">♚</div>
+    <div class="square">♝</div>
+    <div class="square">♞</div>
+    <div class="square">♜</div>
+
+    <div class="square">♟</div>
+    <div class="square">♟</div>
+    <div class="square">♟</div>
+    <div class="square">♟</div>
+    <div class="square">♟</div>
+    <div class="square">♟</div>
+    <div class="square">♟</div>
+    <div class="square">♟</div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square">♟</div>
+    <div class="square">♟</div>
+    <div class="square">♟</div>
+    <div class="square">♟</div>
+    <div class="square">♟</div>
+    <div class="square">♟</div>
+    <div class="square">♟</div>
+    <div class="square">♟</div>
+     <div class="square">♜</div>
+    <div class="square">♞</div>
+    <div class="square">♝</div>
+    <div class="square">♚</div>
+    <div class="square">♛</div>
+    <div class="square">♝</div>
+    <div class="square">♞</div>
+    <div class="square">♜</div>
+</body>
+</html>
