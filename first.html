@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+      }
+      body {
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .main {
+        border-radius: 15px;
+        width: 70%;
+        height: 80vh;
+        background-color: whitesmoke;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        animation-name: moveBox;       /* Keyframe ka naam */
+  animation-duration: 3s;        /* Kitne time me chalega */
+  animation-iteration-count: infinite; /* Bar-bar repeat hoga */
+  animation-direction: alternate; /* Forward + Reverse dono */
+}
+      
+      .nav {
+        width: 60%;
+        height: 40px;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        color: rgb(121, 115, 115);
+      }
+      .logo {
+        width: 35%;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      .butt {
+        background-color: rgb(49, 116, 143);
+        height: 25px;
+        width: 50px;
+        border-radius: 5px;
+        font-size: 11px;
+        font-family: "Times New Roman", Times, serif;
+        color: whitesmoke;
+        border: none;
+        transition: all 2s ease-in-out;
+      }
+      .butt:hover {
+        transform: scale(2, 2);
+      }
+      .foot {
+        width: 90%;
+        height: 50vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+      }
+      .abo {
+        width: 40%;
+        height: auto;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 10px;
+        align-items: center;
+        font-weight: 50px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        text-align: center;
+        text-transform: capitalize;
+      }
+      .sa {
+        width: 40%;
+        height: 35vh;
+        background-color: brown;
+        background-image: url(sta.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 1s ease-in-out;
+      }
+      .sa:hover {
+        transform: scale(1.50);
+      }
+
+      .get {
+        background-color: rgb(49, 116, 143);
+        height: 35px;
+        width: 70px;
+        border-radius: 10px;
+        margin-top: 5px;
+        border: none;
+        font-size: 11px;
+        font-family: "Times New Roman", Times, serif;
+        color: whitesmoke;
+      }
+    
+
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="logo">This is the logo</div>
+      <div class="nav">
+        <b>Features</b>
+        <b>Pricing</b>
+        <b>Testimonials</b>
+        <button class="butt">Signup</button>
+      </div>
+      <div class="foot">
+        <div class="abo">
+          <h1>Feature is Here</h1>
+          <h1>Start Exploring Now</h1>
+          <p style="margin-top: 10px; color: rgb(160, 160, 82)">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+            impedit tenetur autem libero. Porro tempora provident exercitationem
+            iusto temporibus, omnis distinctio vitae, assumenda, accusamus
+            dolore perferendis nesciunt beatae nemo! Quod!
+          </p>
+          <button class="get">GetStart</button>
+        </div>
+        <div class="sa"></div>
+      </div>
+    </div>
+  </body>
+</html>
