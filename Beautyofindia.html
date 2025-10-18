@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty Of India</title>
+    <link href="beauty.png" rel="icon" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: linear-gradient(135deg, #0c5866, #203a43, #2c5364);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+        gap: 2rem;
+        font-family: "Poppins", sans-serif;
+        padding: 2rem;
+      }
+
+      /* Navigation */
+      .nav {
+        width: 100%;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+      }
+
+      .head {
+        background-color: #ff5a5f;
+        border-radius: 20px;
+        padding: 0.6rem 1.5rem;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .ab {
+        font-size: 1.2rem;
+        color: white;
+      }
+
+      /* Box styling */
+      .box1,
+      .box2,
+      .box3,
+      .box4,
+      .box5,
+      .box6,
+      .box7 {
+        width: 30%;
+        height: 60vh;
+        background-color: white;
+        border-radius: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: end;
+        overflow: hidden;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+      }
+
+      .box1:hover,
+      .box2:hover,
+      .box3:hover,
+      .box4:hover,
+      .box5:hover,
+      .box6:hover,
+      .box7:hover {
+        transform: scale(1.03);
+      }
+
+      .box1 {
+        background-image: url("Taj1.jpg");
+      }
+      .box2 {
+        background-image: url("kutub.jpg");
+      }
+      .box3 {
+        background-image: url("ajinta.jpg");
+      }
+      .box4 {
+        background-image: url("elovora.avif");
+      }
+      .box5 {
+        background-image: url("sun.jpg");
+      }
+      .box6 {
+        background-image: url("lalkikila.avif");
+      }
+      .box7 {
+        background-image: url("7heri.avif");
+      }
+
+      /* Info text */
+      .info1 {
+        background-color: rgba(0, 0, 0, 0.55);
+        color: #fff;
+        padding: 1rem;
+        font-size: 0.9rem;
+        text-align: center;
+        line-height: 1.4;
+        width: 100%;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+      }
+
+      /* 🖥️ Laptop/Desktop View */
+      @media (min-width: 1024px) {
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6,
+        .box7 {
+          width: 30%;
+        }
+
+        .info1 {
+          font-size: 1rem;
+        }
+      }
+
+      /* 📱 Mobile View */
+      @media (max-width: 767px) {
+        body {
+          flex-direction: column;
+          align-items: center;
+          gap: 1.5rem;
+          padding: 1rem;
+        }
+
+        .nav {
+          flex-direction: column;
+          text-align: center;
+          gap: 0.5rem;
+        }
+
+        .head {
+          font-size: 1rem;
+          padding: 0.4rem 1rem;
+        }
+
+        .ab {
+          font-size: 1rem;
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6,
+        .box7 {
+          width: 90%;
+          height: 45vh;
+        }
+
+        .info1 {
+          font-size: 0.85rem;
+          padding: 0.7rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="head">Beauty of India</div>
+      <div class="ab">HOME</div>
+    </div>
+
+    <div class="box1">
+      <div class="info1">
+        🕌 Taj Mahal – Agra, Uttar Pradesh<br />
+        Located on the banks of the Yamuna River, this white marble mausoleum
+        was built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal.<br />
+        Constructed in 1632, it is world-famous as the “Symbol of Love.”
+      </div>
+    </div>
+
+    <div class="box2">
+      <div class="info1">
+        🏰 Qutub Minar – Delhi<br />
+        This 73-meter-tall red sandstone tower was built by Qutb-ud-din Aibak in
+        1193.<br />
+        It represents the finest example of Indo-Islamic architecture and marks
+        the beginning of Muslim rule in India.
+      </div>
+    </div>
+
+    <div class="box3">
+      <div class="info1">
+        🕉 Ajanta Caves – Aurangabad, Maharashtra<br />
+        These 30 rock-cut Buddhist caves date back from the 2nd century BCE to
+        the 6th century CE.<br />
+        They contain beautiful paintings and carvings depicting the life of Lord
+        Buddha.
+      </div>
+    </div>
+
+    <div class="box4">
+      <div class="info1">
+        🪔 Ellora Caves – Aurangabad, Maharashtra<br />
+        Ellora has 34 rock-cut caves dedicated to Hinduism, Buddhism, and
+        Jainism.<br />
+        The Kailasa Temple here is one of the largest monolithic rock-cut
+        structures in the world.
+      </div>
+    </div>
+
+    <div class="box5">
+      <div class="info1">
+        🕍 Sun Temple – Konark, Odisha<br />
+        Built in the 13th century by King Narasimhadeva I, the temple is
+        dedicated to the Sun God.<br />
+        Its design resembles a giant chariot with 24 wheels pulled by seven
+        horses.
+      </div>
+    </div>
+
+    <div class="box6">
+      <div class="info1">
+        🕋 Red Fort – Delhi<br />
+        Constructed in 1648 by Emperor Shah Jahan after shifting his capital
+        from Agra to Delhi.<br />
+        It’s a symbol of India’s independence—every year, the Prime Minister
+        hoists the national flag here on August 15.
+      </div>
+    </div>
+
+    <div class="box7">
+      <div class="info1">
+        🐘 Khajuraho Temples – Madhya Pradesh<br />
+        Built between 950 and 1050 AD by the Chandela dynasty, these temples are
+        known for their intricate and artistic sculptures.<br />
+        They represent both Hindu and Jain traditions, showcasing India’s rich
+        cultural heritage.
+      </div>
+    </div>
+  </body>
+</html>
